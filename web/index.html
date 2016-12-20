@@ -1,0 +1,72 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
+    <script src="./bundle.js"></script>
+
+    <style>
+    * {
+        font-family: 'Space Mono', monospace;
+        color: #ABB2C0;
+        font-size: 16pt;
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        margin: 1.25em;
+    }
+    body, input {
+        background-color: #282C34;
+        font-variant-ligatures: none;
+    }
+    input {
+        border: none;
+    }
+    input:focus {
+        outline: none;
+    }
+    ul {
+        list-style: none;
+        padding-left: 0;
+    }
+    #output {
+        line-height: 1.4em;
+    }
+    .spacer {
+        display: inline-block;
+        width: .25em;
+    }
+    #command-line {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #cli {
+        flex: 1;
+    }
+
+    table .command {
+        padding-right: 2em;
+        font-weight: bold;
+    }
+    td {
+        vertical-align: top;
+    }
+    td.top-level {
+        width: 20%;
+    }
+    .echo {
+        opacity: .5;
+    }
+    </style>
+</head>
+<body>
+    <div id="console">
+        <ul id="output">
+        </ul>
+    </div>
+    <div id="command-line">
+        🦁<div class="spacer"></div><strong>&gt;</strong><div class="spacer"></div><input id="cli"></input>
+    </div>
+</body>
+</html>
